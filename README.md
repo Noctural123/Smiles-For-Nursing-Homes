@@ -9,7 +9,7 @@ This website is designed to help users and volunteers at OU locate specific nurs
 The website prompts the user to enter in:
 - Their age 
 - Amount of miles they're willing to drive 
-
+- Interests and Hobbies 
 and then outputs the nursing home best fit for them.
 
 ![nursinghomePic](https://user-images.githubusercontent.com/100321531/201832385-2349edc0-1caa-4820-a71e-62a5811e3f72.JPG)
