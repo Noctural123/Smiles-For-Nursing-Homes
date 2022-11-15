@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #070707;
+
+  }
+
+ 
+#navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    left: 0;
+    margin-bottom: 3rem;
+    background-color: #082f3b;
+
+}
+
+#logo {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+#logo > a {
+    font-size: 5rem;
+    color:#E5FCC2;
+
+}
+
+#navbar > ul {
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 0rem 8rem 2rem 8rem;    
+
+}
+
+.nav-button  {
+    font-size: 2.4rem;
+    text-align: center;
+    width: 33.3%;
+    margin-bottom: 1rem;
+
+}
+
+.nav-button > a  {
+  color:#E5FCC2;
+
+
+}
+
+@media (max-width: 550px) {
+  #logo {
+      padding: 2rem;
+  }
+  #navbar > ul {
+      padding: 0rem 2rem 1rem 2rem;
+      flex-direction: column;
+      align-items: center;
+  }
+  li {
+      padding: 0 1.5rem 1rem 1.5rem;
+      width: 50%;
+  }
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.filters {
+    text-align: center;
+    margin-bottom: 2.8rem;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+
+  .filters label {
+    padding: 0.5rem 1rem;
+    margin: 0rem 2rem 0rem 2rem;
+    border-radius: 2rem;
+    min-width: 50px;
+    line-height: normal;
+    cursor: pointer;
+    transition: all 0.1s;
+    font-size: 1.8rem;
+  }
+
+  .filters label:hover {
+    background: var(--black);
+    color: var(--white);
+  }
+
+  :root {
+    --black: #082f3b;
+    --white: #fff;
+    --green: #547980;
+  }
+
+  .posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+    grid-gap: 4rem;
+    justify-items: center;
+
+    
+  }
+   
+  .post {
+    max-width: 40rem;
+    list-style-type: none;
+    background-color: #E5FCC2;
+    box-shadow: 3px 3px 15px gray;
+    text-align: center;
+  }
+
+  .post > a > h2 {
+    padding: 2.5rem;
+    font-size: 1.8rem;
+    
+  }
+
+  .post-img {
+    display: block;
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+  }
+
+[value="All"]:checked ~ .posts [data-category] {
+    display: block;
+  }
+
+[value="Art"]:checked ~ .posts .post:not([data-category~="Art"]),
+[value="Cooking"]:checked ~ .posts .post:not([data-category~="Cooking"]),
+[value="Outside"]:checked ~ .posts .post:not([data-category~="Outside"]){
+  display: none;
+}
+
+[value="All"]:checked ~ .filters [for="All"],
+[value="Art"]:checked ~ .filters [for="Art"],
+[value="Cooking"]:checked ~ .filters [for="Cooking"],
+[value="Outside"]:checked ~ .filters [for="Outside"] {
+  background: var(--black);
+  color: var(--white);
+}
+
+#nurs-home {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.flex {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+  grid-gap: 4rem;
+  align-items: center;
+}
+
+#heading{
+  font-size: 2.8rem;
+  padding-bottom: 4rem;
+  padding-top: 1rem;
+}
+
+#nursing-pic {
+  display: block;
+  width: 100%;
+}
+
+#description {
+  font-size: 2rem;
+}
+
+#description > p {
+  padding-bottom: 2rem;
+}
+
+form {
+	padding: 2%;
+	border-radius: 3px;
+	margin: auto 22% -25% 22%;
+}
+.center {
+	text-align: center;
+}
+#survey-form > div > label {
+	display: flex;
+	padding-bottom: 5px;
+	font-size: 20px;
+}
+.name {
+	margin: 15px 15px 30px 15px;
+}
+.group-format {
+	margin: 30px 15px 30px 15px;
+}
+.input-text {
+	width: 100%;
+	height: 30px;
+}
+.input-textarea {
+	width: 100%;
+	height: 80px;
+}
+input::placeholder {
+	font-size: 16px;
+}
+textarea::placeholder {
+	font-family: sans-serif;
+	font-size: 16px;
+}
+
+#submit {
+	width: 100%;
+	height: 40px;
+	background-color: var(--black);
+	color: white;
+	text-transform: uppercase;
+}
