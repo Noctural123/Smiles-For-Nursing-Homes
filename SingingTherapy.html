@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="Styles/newStyle.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/9415dcb7b3.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+    <nav id="navbar">
+        <h1 id="logo"><a href="index.html" >SMILES FOR NURSING HOMES</a></h1>
+        <ul> 
+            <li class="nav-button"><a href="aboutUs.html">About Us</a></li>
+            <li class="nav-button"><a href="partners.html">Partnering Nursing Homes</a></li>
+            <li class="nav-button"><a href="volunteering.html">Volunteering opportunities</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="nurs-home">
+            <p id="heading">Singing and Music Therapy<p>
+            <div class="flex">
+                <img id="nursing-pic" src="pictures/music.jpg">
+                <div id="description">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <p>Address: Lorem Ipsum</p>
+                    <p>Contact: 000 000 0000</p>
+                </div>
+            </div>
+
+            <form id="survey-form">
+                <div class="name">
+                    <label id="name-label" for="name">Name</label>
+                    <input class="input-text" id="name" type="text" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="group-format">
+                    <label id="email-label" for="email">Email</label>
+                    <input class="input-text" id="email" type="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="group-format">
+                    <label id="number-label" for="number">Age<span></span></label>
+                    <input class="input-text" id="number" type="number" name="age" min="10" max="99" placeholder="Age" required>
+                </div>
+                <div class="group-format">
+                    <label for="comment">Additional information:</label>
+                    <textarea class="input-textarea" id="comment" name="comment/suggestion" placeholder="Enter your comment here..."></textarea>
+                </div>
+                <div class="group-format">
+                    <input id="submit" type="submit">
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

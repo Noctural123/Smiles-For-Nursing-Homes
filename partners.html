@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Smiles For Nursing Homes</title>
+        <link rel="stylesheet" href="Styles/style.css">
+        <link type="image/png" sizes="16x16" rel="icon" href="pictures/icons8-nursing-16.png">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/9415dcb7b3.js" crossorigin="anonymous"></script>
+    </head>
+</html>
+<body>
+    <script src = "Javascript/code.js"></script>
+    <nav id="navbar">
+        <h1 id="logo"><a href="index.html" >SMILES FOR NURSING HOMES</a></h1>
+        <ul> 
+            <li><a href="aboutUs.html">About Us</a></li>
+            <li><a href="partners.html">Partnering Nursing Homes</a></li>
+            <li><a href="volunteering.html">Volunteering opportunities</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <div class = "container">
+                <img id="title-pic" src="pictures/nursinghomefun.jpg" alt="Nursing Home Animated Picture">
+                <div class = "title-text">We partnered with nursing homes throughout Oklahoma to help better connect and serve the community.</div>
+            </div>
+        </section>
+
+        <section id="home-partners"></section>
+
+        <section>
+            <div>
+                <div id = "partner-template">
+                    <p class= "partners-text1">
+                        It's <span class = "difficult-text">difficult</span> finding a local nursing home to volunteer in.
+                    </p>
+                    <p class = "partners-text2">
+                        That's why with our website; you can search, locate, and find the best nursing home for you in an <span class= "instant-text">instant!</span>
+                    </p>
+                </div>
+                <div>
+                    <img id = "partners-pic" src="pictures/partnersPict.jpg">
+                </div>
+            </div>
+
+            
+        </section>
+
+        <div id = questions-pic-background>
+            <img id = "questions-pic" src="pictures/questions.JPG">
+        </div>
+
+        <section>
+            <div id="input-questions">
+                <div id = "questions">
+                    <div id = "question-margin">
+                        <p class="questions-text">
+                            Find your nursing home!
+                        </p>
+                        <p class = question-text>
+                            &#x2022 How far are you willing to drive?
+                        </p>
+                        <input id = "main-question-input" type = "text" />
+                        <p class="input-text">
+                            miles
+                        </p>
+                    </div>
+
+                    <div id = "question-margin">
+                        <p class = question-text>
+                            &#x2022 How old are you?
+                        </p>
+                        <input id = "age-question-input" type = "text" />
+                        <p class="input-text">
+                            years old.
+                        </p>
+                    </div>
+
+                    <div id = "question-margin">
+                        <p class = question-text>
+                            &#x2022 What are your hobbies?
+                        </p>
+                        <input id = "hobbies-input" type = "text" />
+                        
+                    </div>
+
+                </div>
+
+                <button onclick = "render();" class="compute-button">Find my nursing home!</button>
+            </div>
+        </section>
+            
+        <section>
+            <div>
+                <div id = "output-display">
+                    <div id= "output-text">
+                        Fill out the questions above to get started!
+                    </div>
+                
+                </div>
+                <div>
+                    <img id = "output-pic" src="pictures/volunteeringOpp.JPG">
+                </div>
+            </div>
+
+            
+        </section>
+            
+        </section>
+    </main>
+</body>
