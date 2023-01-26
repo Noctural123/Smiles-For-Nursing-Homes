@@ -13,5 +13,5 @@ The website prompts the user to enter in:
 
 and then outputs the nursing home best fit for them.
 
-![nursinghomePic](https://user-images.githubusercontent.com/100321531/201832385-2349edc0-1caa-4820-a71e-62a5811e3f72.JPG)
+<p align = "center"> ![nursinghomePic](https://user-images.githubusercontent.com/100321531/201832385-2349edc0-1caa-4820-a71e-62a5811e3f72.JPG) </p>
 
